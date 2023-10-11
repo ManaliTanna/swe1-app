@@ -8,4 +8,4 @@ It’ll consist of two parts:
    
 2. An admin site that lets you add, change, and delete polls.
 
-Try out my django polls application [here](http://django-env.eba-mh7mgqqg.us-west-2.elasticbeanstalk.com/polls/1/)
+Try out my django polls application [here](http://django-env.eba-mh7mgqqg.us-west-2.elasticbeanstalk.com/polls)
