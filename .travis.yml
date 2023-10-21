@@ -7,13 +7,16 @@ install:
 
 before_script:
   - python manage.py migrate
+
 script:
   - black --check .
-  - flake8 --check .
-  - coverage run --source=swe1-app,polls manage.py test
+  - flake8 **/*.py
+  - coverage run --source=polls manage.py test
   - coverage report
+
 after_script:
   - coveralls
+  
 deploy:
   provider: elasticbeanstalk
   access_key_id: $AWS_ACCESS_KEY_ID
