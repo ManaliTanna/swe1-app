@@ -9,7 +9,7 @@ before_script:
   - python manage.py migrate
 script:
   - black --check .
-  - flake8 .  --max-line-length=100
+  - flake8 --check .
   - coverage run --source=swe1-app,polls manage.py test
   - coverage report
 after_script:
