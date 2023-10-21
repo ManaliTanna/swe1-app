@@ -76,8 +76,6 @@ WSGI_APPLICATION = "mysite.wsgi.application"
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
-# if using any other database change HERE - 'django.db.backends.postgresql', 
-# 'django.db.backends.mysql', or 'django.db.backends.oracle'
 
 DATABASES = {
     "default": {
