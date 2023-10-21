@@ -1,6 +1,7 @@
 from django.urls import path
 
 from . import views
+
 """
 path()
 route - urlpattern string
@@ -9,7 +10,7 @@ kwargs - arbitrary arguments
 name - to refer to this url from anywhere
 """
 
-app_name = 'polls'
+app_name = "polls"
 # urlpatterns = [
 #     path('', views.index, name='index'),
 #     path('<int:question_id>/', views.detail, name='detail'),
@@ -17,8 +18,8 @@ app_name = 'polls'
 #     path('<int:question_id>/vote/', views.vote, name='vote'),
 # ]
 urlpatterns = [
-    path('', views.IndexView.as_view(), name='index'),
-    path('<int:pk>/', views.DetailView.as_view(), name='detail'),
-    path('<int:pk>/results/', views.ResultsView.as_view(), name='results'),
-    path('<int:question_id>/vote/', views.vote, name='vote'),
+    path("", views.IndexView.as_view(), name="index"),
+    path("<int:pk>/", views.DetailView.as_view(), name="detail"),
+    path("<int:pk>/results/", views.ResultsView.as_view(), name="results"),
+    path("<int:question_id>/vote/", views.vote, name="vote"),
 ]
