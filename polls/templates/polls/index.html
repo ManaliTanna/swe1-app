@@ -1,9 +1,36 @@
-{% if latest_question_list %}
-    <ul>
-    {% for question in latest_question_list %}
-        <li><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li>
-    {% endfor %}
-    </ul>
-{% else %}
-    <p>No polls are available.</p>
-{% endif %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+</head>
+<body>
+    <header>
+        <center>
+            <h1>Welcome to my Polls App</h1>
+        </center>
+    </header>
+
+    <main>
+        <section class="polls-section">
+            <h2>Latest Polls</h2>
+            {% if latest_question_list %}
+                <ol class="polls-list">
+                    {% for question in latest_question_list %}
+                        <li class="poll-item">
+                            <a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a>
+                        </li>
+                    {% endfor %}
+                </ol>
+            {% else %}
+                <p>No polls are available.</p>
+            {% endif %}
+        </section>
+
+        <!-- Add more sections or content here as needed -->
+    </main>
+
+    <footer>
+        <p>&copy; { 2023 } Manali Tanna. All rights reserved.</p>
+    </footer>
+</body>
+</html>
