@@ -13,4 +13,5 @@ Try out my public django polls application [here](http://django-env.eba-mh7mgqqg
  # CI/CD
 
 [![Build Status](https://app.travis-ci.com/ManaliTanna/swe1-app.svg?branch=main)](https://app.travis-ci.com/ManaliTanna/swe1-app)
+[![Coverage Status](https://coveralls.io/repos/github/badges/shields/badge.svg?branch=master)](https://coveralls.io/github/badges/shields?branch=master)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
