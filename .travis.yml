@@ -15,7 +15,7 @@ script:
   - coverage report
 
 after_script:
-  - coveralls
+  - curl -sL https://coveralls.io/coveralls-linux.tar.gz | tar -xz && ./coveralls
   
 deploy:
   provider: elasticbeanstalk
