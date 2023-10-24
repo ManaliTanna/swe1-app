@@ -21,7 +21,6 @@ deploy:
   provider: elasticbeanstalk
   access_key_id: $AWS_ACCESS_KEY_ID
   secret_access_key: $AWS_SECRET_ACCESS_KEY
-  COVERALLS_REPO_TOKEN: $COVERALLS_REPO_TOKEN
   region: "us-west-2"
   app: "django-tutorial"
   env: "django-env"
